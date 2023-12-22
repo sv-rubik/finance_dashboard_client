@@ -15,5 +15,11 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // // Игнорировать правило "no-empty-required-properties" для свойства "query"
+    // "no-empty-required-properties": ["error", { allowProperties: ["query"] }],
+    // // Игнорировать правило "no-empty-required-properties" для свойства "providesTags"
+    // "no-empty-required-properties": ["error", { allowProperties: ["providesTags"] }],
+    // // Игнорировать правило "no-unnecessary-type-assertion"
+    // "no-unnecessary-type-assertion": "off",
   },
 }
