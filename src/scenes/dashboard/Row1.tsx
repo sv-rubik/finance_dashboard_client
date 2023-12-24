@@ -25,6 +25,7 @@ const Row1 = (props: Props) => {
       })
     );
   }, [data]);
+  console.log(revenue)
 
   const revenueExpenses = useMemo(() => {
     return(
@@ -38,6 +39,7 @@ const Row1 = (props: Props) => {
         })
     );
   }, [data]);
+  console.log(revenueExpenses)
 
   const revenueProfit = useMemo(() => {
     return (
@@ -51,7 +53,7 @@ const Row1 = (props: Props) => {
       })
     );
   }, [data]);
-
+  console.log(revenueProfit)
 
   return (
     <>
@@ -65,6 +67,7 @@ const Row1 = (props: Props) => {
           <AreaChart
             width={500}
             height={400}
+            // вставляем данные с сервера
             data={revenueExpenses}
             margin={{
               top: 15,
